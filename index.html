@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Skypенджър</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+		<header>
+			<h1 id="skypenger-logo">Skypенджър</h1>
+			<div id="connection-status">Signed Out</div>
+		</header>
+
+		<div id="sign-in-box">
+			<textarea id="messenger-id" placeholder="Type Username here..."  required></textarea>
+			<button id="sign-in-button">Sign In</button>
+			<div id="sign-in-error-msg" class="display-none">Please, select a Username!</div>
+		</div>
+		<div id="signed-in-content" class="display-none">
+			<div id="signed-user-info">
+
+			</div>
+			<div id="chat-info"></div>
+			<div id="active-users-list-container">
+				<div id="active-users-header">Active users</div>
+				<ul id="active-users-list">
+				</ul>
+			</div>
+			<div id="chat-box">
+
+
+				<ul id="messages-list"></ul>
+				<div id="user-is-typing"></div>
+				<form id="message-form" action="#" method="post">
+					<textarea id="message" placeholder="Write your message here..." required></textarea>
+
+
+					<button id="send-button">Send</button>
+					<button id="sign-out-button">Sign Out</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
